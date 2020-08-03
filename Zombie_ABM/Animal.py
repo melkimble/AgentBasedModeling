@@ -1,7 +1,8 @@
 #################################################################
 # A tiny spatially-explicit individually based model class.
 # Author: Jim Graham
-# Date: 3/30/2015
+# Modified by: Melissa Kimble
+# Modification Date: 4/21/2015
 #################################################################
 
 import random
@@ -125,7 +126,7 @@ class AnimalClass:
 							TheAnimals.remove(TheItem)
 							self.TheCanvas.delete(TheItem.id)
 							self.LifeCounter=self.MaxLifeCycles
-							print("Human was eaten") # For debugging; A new zombie is born!!
+							print("Human was eaten, and a zombie was born!") # For debugging; A new zombie is born!!
 							NewBorn=AnimalClass(self.TheCanvas, self.CenterX, self.CenterY,
 									    self.Type,self.FillColor,self.MaxBirthCycles,self.MaxLifeCycles,self.DistanceToEat,self.DistanceToMove,self.DistanceToRun,self.DistanceToChase,self.DistanceToShoot,self.Ammo)
 							TheAnimals.append(NewBorn)

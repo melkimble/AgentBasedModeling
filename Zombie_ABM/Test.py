@@ -60,7 +60,7 @@ NUM_HUMAN=5 # number of HUMAN to start with
 HUMAN_BIRTH_CYCLES=50 # number of cycles before each HUMAN repoduces
 HUMAN_LIFE_CYCLES=20 # number of cycles until HUMAN dies if they cannot find food
 HUMAN_DISTANCE_TO_MOVE=5 # distance HUMAN can move in each cycle, in pixels.
-DistanceToRun=10
+DistanceToRun=7
 Ammo=0
 DistanceToShoot=10
 
@@ -104,7 +104,7 @@ while Count<NUM_HUMAN:
 	#BirthCycles=int(HUMAN_BIRTH_CYCLES*random.uniform(0,1))
 	
 	# Create the new animal and add it to the list of animals
-	NewHUMAN=Animal.AnimalClass(TheCanvas, CenterX, CenterY,Animal.TYPE_HUMAN,"White",
+	NewHUMAN=Animal.AnimalClass(TheCanvas, CenterX, CenterY,Animal.TYPE_HUMAN,"Red",
 	    HUMAN_BIRTH_CYCLES,HUMAN_LIFE_CYCLES,0,HUMAN_DISTANCE_TO_MOVE,DistanceToRun,0,DistanceToShoot,Ammo)
 	TheAnimals.append(NewHUMAN)
 	
